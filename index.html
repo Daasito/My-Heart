@@ -95,8 +95,8 @@ const heartElement = document.getElementById('heart');
 function startHeart() {
   const name = document.getElementById('nameInput').value.trim();
   
-  if (name.toLowerCase() !== "anny") {
-    alert('❌ Error: Este corazón es solo para Anny');
+  if (name.toLowerCase() !== "anny" && name.toLowerCase() !== "catalina" && name.toLowerCase() !== "anny catalina" && name.toLowerCase() !== "anny catalina oviedo" && name.toLowerCase() !== "anny catalina oviedo arango") {
+    alert('❌ Error: Este corazón no es para ' + name);
     return;
   }
 
